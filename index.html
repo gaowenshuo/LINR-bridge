@@ -64,9 +64,6 @@
             margin-bottom: 40px;
             line-height: 1.6;
         }
-        .abstract p {
-            text-indent: 2em;
-        }
         .pipeline {
             margin-top: 20px;
         }
@@ -91,7 +88,7 @@
             margin-bottom: 30px;
         }
         .results img {
-            max-width: 150px;
+            max-width: 300px; /* Increased image size */
             height: auto;
             margin: 0 20px;
         }
@@ -99,8 +96,8 @@
             font-size: 16px;
             max-width: 300px;
             text-align: center;
+            font-style: italic;
             margin: 0 20px;
-            text-transform: uppercase;
         }
     </style>
 </head>
@@ -119,9 +116,7 @@
 
     <h2>Abstract</h2>
     <div class="abstract">
-        <p>Vector graphics, known for their scalability and user-friendliness, provide a unique approach to visual content compared to traditional pixel-based images. Animation of these graphics, driven by the motion of their elements, offers enhanced comprehensibility and controllability but often requires substantial manual effort. To automate this process, we propose a novel method that integrates implicit neural representations with text-to-video diffusion models for vector graphic animation.</p>
-        <p>Our approach employs layered implicit neural representations to reconstruct vector graphics, preserving their inherent properties such as infinite resolution and precise color and shape constraints, which effectively bridges the large domain gap between vector graphics and diffusion models. The neural representations are then optimized using video score distillation sampling, which leverages motion priors from pretrained text-to-video diffusion models. Finally, the vector graphics are warped to match the representations, resulting in smooth animation.</p>
-        <p>Experimental results validate the effectiveness of our method in generating vivid and natural vector graphic animations, demonstrating significant improvement over existing techniques that suffer from limitations in flexibility and animation quality.</p>
+        Vector graphics, known for their scalability and user-friendliness, provide a unique approach to visual content compared to traditional pixel-based images. Animation of these graphics, driven by the motion of their elements, offers enhanced comprehensibility and controllability but often requires substantial manual effort. To automate this process, we propose a novel method that integrates implicit neural representations with text-to-video diffusion models for vector graphic animation. Our approach employs layered implicit neural representations to reconstruct vector graphics, preserving their inherent properties such as infinite resolution and precise color and shape constraints, which effectively bridges the large domain gap between vector graphics and diffusion models. The neural representations are then optimized using video score distillation sampling, which leverages motion priors from pretrained text-to-video diffusion models. Finally, the vector graphics are warped to match the representations, resulting in smooth animation. Experimental results validate the effectiveness of our method in generating vivid and natural vector graphic animations, demonstrating significant improvement over existing techniques that suffer from limitations in flexibility and animation quality.
     </div>
 
     <h2>Pipeline</h2>
@@ -134,32 +129,32 @@
     <div class="results">
         <div class="results-row">
             <img src="1.png" alt="Input Image 1">
-            <div class="prompt">ANIME STYLE, VECTOR 2D ART, A MAN IS WAVING HIS HANDS SMOOTHLY.</div>
+            <div class="prompt">"Anime style, Vector 2D art, A man is waving his hands smoothly."</div>
             <img src="1.gif" alt="Result 1">
         </div>
         <div class="results-row">
             <img src="2.png" alt="Input Image 2">
-            <div class="prompt">ANIME STYLE, VECTOR 2D ART, A CARTOON BLUE DOLPHIN SWIMS AND FLEXES ITS BODY SMOOTHLY.</div>
+            <div class="prompt">"Anime style, Vector 2D art, A cartoon blue dolphin swims and flexes its body smoothly."</div>
             <img src="2.gif" alt="Result 2">
         </div>
         <div class="results-row">
             <img src="3.png" alt="Input Image 3">
-            <div class="prompt">ANIME STYLE, VECTOR 2D ART, A CARTOON YELLOW DOG IS WALKING.</div>
+            <div class="prompt">"Anime style, Vector 2D art, A cartoon yellow dog is walking."</div>
             <img src="3.gif" alt="Result 3">
         </div>
         <div class="results-row">
             <img src="4.png" alt="Input Image 4">
-            <div class="prompt">ANIME STYLE, VECTOR 2D ART, A WOMAN IN A YELLOW DRESS IS DANCING ON HER FEET AND HANDS.</div>
+            <div class="prompt">"Anime style, Vector 2D art, A woman in a yellow dress is dancing on her feet and hands."</div>
             <img src="4.gif" alt="Result 4">
         </div>
         <div class="results-row">
             <img src="5.png" alt="Input Image 5">
-            <div class="prompt">THE BLUE ROUND CLOCK WITH WHITE BOARD AND TWO BLUE POINTERS ROTATES CLOCKWISE SMOOTHLY.</div>
+            <div class="prompt">"The blue round clock with white board and two blue pointers rotates clockwise smoothly."</div>
             <img src="5.gif" alt="Result 5">
         </div>
         <div class="results-row">
             <img src="6.png" alt="Input Image 6">
-            <div class="prompt">ANIME STYLE, VECTOR 2D ART, YELLOW SPOTTED BUTTERFLY FLIES AND FLAPS ITS WINGS.</div>
+            <div class="prompt">"Anime style, Vector 2D art, Yellow spotted butterfly flies and flaps its wings."</div>
             <img src="6.gif" alt="Result 6">
         </div>
     </div>

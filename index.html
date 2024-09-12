@@ -84,10 +84,23 @@
         .results {
             margin-top: 40px;
         }
+        .results-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
         .results img {
-            max-width: 200px;
+            max-width: 150px;
             height: auto;
-            margin: 10px;
+            margin: 0 20px;
+        }
+        .prompt {
+            font-size: 16px;
+            max-width: 300px;
+            text-align: center;
+            margin: 0 20px;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -119,12 +132,36 @@
 
     <h2>Results</h2>
     <div class="results">
-        <img src="1.gif" alt="Result 1">
-        <img src="2.gif" alt="Result 2">
-        <img src="3.gif" alt="Result 3">
-        <img src="4.gif" alt="Result 4">
-        <img src="5.gif" alt="Result 5">
-        <img src="6.gif" alt="Result 6">
+        <div class="results-row">
+            <img src="1.png" alt="Input Image 1">
+            <div class="prompt">ANIME STYLE, VECTOR 2D ART, A MAN IS WAVING HIS HANDS SMOOTHLY.</div>
+            <img src="1.gif" alt="Result 1">
+        </div>
+        <div class="results-row">
+            <img src="2.png" alt="Input Image 2">
+            <div class="prompt">ANIME STYLE, VECTOR 2D ART, A CARTOON BLUE DOLPHIN SWIMS AND FLEXES ITS BODY SMOOTHLY.</div>
+            <img src="2.gif" alt="Result 2">
+        </div>
+        <div class="results-row">
+            <img src="3.png" alt="Input Image 3">
+            <div class="prompt">ANIME STYLE, VECTOR 2D ART, A CARTOON YELLOW DOG IS WALKING.</div>
+            <img src="3.gif" alt="Result 3">
+        </div>
+        <div class="results-row">
+            <img src="4.png" alt="Input Image 4">
+            <div class="prompt">ANIME STYLE, VECTOR 2D ART, A WOMAN IN A YELLOW DRESS IS DANCING ON HER FEET AND HANDS.</div>
+            <img src="4.gif" alt="Result 4">
+        </div>
+        <div class="results-row">
+            <img src="5.png" alt="Input Image 5">
+            <div class="prompt">THE BLUE ROUND CLOCK WITH WHITE BOARD AND TWO BLUE POINTERS ROTATES CLOCKWISE SMOOTHLY.</div>
+            <img src="5.gif" alt="Result 5">
+        </div>
+        <div class="results-row">
+            <img src="6.png" alt="Input Image 6">
+            <div class="prompt">ANIME STYLE, VECTOR 2D ART, YELLOW SPOTTED BUTTERFLY FLIES AND FLAPS ITS WINGS.</div>
+            <img src="6.gif" alt="Result 6">
+        </div>
     </div>
 </body>
 </html>

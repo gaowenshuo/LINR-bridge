@@ -65,6 +65,15 @@
             font-size: 14px;
             margin-top: 10px;
             max-width: 800px;
+            text-align: center;
+        }
+        .results {
+            margin-top: 40px;
+        }
+        .results img {
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
         }
     </style>
 </head>
@@ -88,6 +97,16 @@
     <div class="pipeline">
         <img src="pipeline.png" alt="Pipeline Diagram">
         <div class="caption">The pipeline of LINR Bridge takes an SVG and a text prompt as inputs, and produces an SVG animation as output. The pipeline consists of three steps: (1) Vector Graphics Reconstruction: Optimize a LINR network to reconstruct the SVG. (2) Coarse Animation Generation: Replicate the network multiple times to construct a multi-frame video, then input the frames and the text prompt into the text-to-video model, optimizing with video score distillation sampling (VSDS) to obtain a coarse animation. (3) Animation Refinement: Warp the SVG based on optical flow to match the animation, resulting in the final animated SVG.</div>
+    </div>
+
+    <h2>Results</h2>
+    <div class="results">
+        <img src="1.gif" alt="Result 1">
+        <img src="2.gif" alt="Result 2">
+        <img src="3.gif" alt="Result 3">
+        <img src="4.gif" alt="Result 4">
+        <img src="5.gif" alt="Result 5">
+        <img src="6.gif" alt="Result 6">
     </div>
 </body>
 </html>
